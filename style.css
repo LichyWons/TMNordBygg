@@ -235,7 +235,7 @@ h3 {
 .hero {
   padding-top: var(--space-89);
   padding-bottom: var(--space-144);
-  background-image: url('img/snow-guard-for-safety-in-winter-on-house-roof-top-2026-03-17-05-08-16-utc.jpg');
+  background-image: url('img/snow-guard-for-safety-in-winter-on-house-roof-top-2026-03-17-05-08-16-utc.webp');
   background-size: cover;
   background-position: center;
 }
@@ -364,19 +364,19 @@ h3 {
 }
 
 .service-card-roof {
-  background-image: url('img/roof.avif');
+  background-image: url('img/roof.webp');
 }
 
 .service-card-carpentry {
-  background-image: url('img/tomrer.avif');
+  background-image: url('img/tomrer.webp');
 }
 
 .service-card-facade {
-  background-image: url('img/kledning.avif');
+  background-image: url('img/kledning.webp');
 }
 
 .service-card-blikk {
-  background-image: url('img/blikk.avif');
+  background-image: url('img/blikk.webp');
 }
 .service-cta {
   margin-top: var(--space-34);
@@ -442,7 +442,7 @@ h3 {
 .project-image-one {
   background:
     linear-gradient(rgba(17, 21, 18, 0.28), rgba(17, 21, 18, 0.28)),
-    url('img/byttetak.jpg');
+    url('img/byttetak.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -451,7 +451,7 @@ h3 {
 .project-image-two {
   background:
     linear-gradient(rgba(17, 21, 18, 0.28), rgba(17, 21, 18, 0.28)),
-    url('img/byttekledning.jpg');
+    url('img/byttekledning.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -460,7 +460,7 @@ h3 {
 .project-image-three {
   background:
     linear-gradient(rgba(17, 21, 18, 0.28), rgba(17, 21, 18, 0.28)),
-    url('img/bytteavtak.jpg');
+    url('img/bytteavtak.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
