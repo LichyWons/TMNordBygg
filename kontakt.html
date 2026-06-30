@@ -3,12 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      TM Nord Bygg AS | Tømrer- og takarbeid i Nordland og Troms og Finnmark
-    </title>
+    <title>Kontakt | TM Nord Bygg AS</title>
     <meta
       name="description"
-      content="TM Nord Bygg AS utfører takarbeid, tømrerarbeid, kledning, vinduer, etterisolering og utvalgte byggeprosjekter i Nordland, Troms og Finnmark."
+      content="Ta kontakt med TM Nord Bygg AS for tilbud på tak-, tømrer- og blikkarbeid i Nordland, Troms og Finnmark."
     />
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -16,9 +14,8 @@
     <header class="site-header">
       <div class="container header-inner">
         <a href="index.html" class="logo">
-          <img src="img/tmnordlogo 2.svg" alt="TM Nord Bygg AS" />
+          <img src="img/tmnordlogo-2.svg" alt="TM Nord Bygg AS" />
         </a>
-
         <nav class="main-nav" aria-label="Hovedmeny">
           <ul>
             <li><a href="tjenester.html">Tjenester</a></li>
@@ -28,24 +25,11 @@
             <li><a href="kontakt.html">Kontakt</a></li>
           </ul>
         </nav>
-
         <a href="kontakt.html" class="btn btn-primary header-cta">Be om tilbud</a>
-
-        <button
-          class="menu-btn"
-          type="button"
-          aria-label="Åpne meny"
-          aria-controls="menu-overlay"
-          aria-expanded="false"
-        >
-          <span class="menu-icon" aria-hidden="true">
-            <span></span>
-            <span></span>
-            <span></span>
-          </span>
+        <button class="menu-btn" type="button" aria-label="Åpne meny" aria-controls="menu-overlay" aria-expanded="false">
+          <span class="menu-icon" aria-hidden="true"><span></span><span></span><span></span></span>
         </button>
       </div>
-
       <div class="menu-overlay" id="menu-overlay" aria-hidden="true">
         <div class="menu-panel">
           <nav class="menu-links" aria-label="Mobilmeny">
@@ -54,97 +38,139 @@
             <a href="prosjekter.html">Prosjekter</a>
             <a href="anmeldelser.html">Anmeldelser</a>
             <a href="kontakt.html">Kontakt</a>
-            <a href="kontakt.html" class="btn btn-primary mobile-menu-cta"
-              >Be om tilbud</a
-            >
+            <a href="kontakt.html" class="btn btn-primary mobile-menu-cta">Be om tilbud</a>
           </nav>
         </div>
       </div>
     </header>
 
-    <footer class="site-footer">
-  <div class="container footer-grid">
-    <div class="footer-brand">
-      <a href="index.html" class="footer-logo">
-        <img src="img/tmnordlogo 2.svg" alt="TM Nord Bygg AS" />
-      </a>
+    <main>
+      <section class="section">
+        <div class="container contact-grid">
+          <div>
+            <div class="section-heading left">
+              <p class="eyebrow">Ta kontakt</p>
+              <h1>Be om tilbud eller ta en prat</h1>
+            </div>
+            <p>Fyll ut skjemaet så tar vi kontakt innen kort tid. Du kan også ringe eller sende e-post direkte.</p>
 
-      <p class="footer-text">
-        TM Nord Bygg AS utfører takarbeid, tømrerarbeid, blikkarbeid, kledning,
-        vinduer og etterisolering i Nordland, Troms og Finnmark.
-      </p>
+            <form
+              name="tilbud"
+              method="POST"
+              data-netlify="true"
+              netlify-honeypot="bot-field"
+              class="contact-form"
+            >
+              <input type="hidden" name="form-name" value="tilbud" />
+              <p class="visually-hidden">
+                <label>Ikke fyll ut dette feltet: <input name="bot-field" /></label>
+              </p>
 
-      <a
-        href="https://www.facebook.com/profile.php?id=100087555399994"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="footer-social"
-        aria-label="Facebook"
-      >
-        <svg
-          viewBox="0 0 24 24"
-          aria-hidden="true"
-          focusable="false"
-        >
-          <path
-            d="M22 12.07C22 6.49 17.52 2 12 2S2 6.49 2 12.07c0 5.02 3.66 9.18 8.44 9.93v-7.02H7.9v-2.91h2.54V9.85c0-2.52 1.49-3.91 3.78-3.91 1.1 0 2.25.2 2.25.2v2.48H15.2c-1.25 0-1.64.78-1.64 1.58v1.89h2.8l-.45 2.91h-2.35V22c4.78-.75 8.44-4.91 8.44-9.93Z"
-          />
-        </svg>
-      </a>
-    </div>
+              <div class="form-group">
+                <label class="form-label" for="name">Navn *</label>
+                <input class="form-input" type="text" id="name" name="name" required autocomplete="name" />
+              </div>
 
-    <div class="footer-column footer-nav">
-      <h3>Snarveier</h3>
-      <ul class="footer-links">
-        <li><a href="tjenester.html">Tjenester</a></li>
-        <li><a href="om.html">Om oss</a></li>
-        <li><a href="prosjekter.html">Prosjekter</a></li>
-        <li><a href="anmeldelser.html">Anmeldelser</a></li>
-        <li><a href="kontakt.html">Kontakt</a></li>
-      </ul>
-    </div>
+              <div class="form-group">
+                <label class="form-label" for="epost">E-post *</label>
+                <input class="form-input" type="email" id="epost" name="epost" required autocomplete="email" />
+              </div>
 
-    <div class="footer-column footer-services">
-      <h3>Tjenester</h3>
-      <ul class="footer-links">
-        <li><a href="tjenester.html">Takarbeid</a></li>
-        <li><a href="tjenester.html">Tømrerarbeid</a></li>
-        <li><a href="tjenester.html">Blikkarbeid</a></li>
-        <li><a href="tjenester.html">Kledning og vinduer</a></li>
-        <li><a href="tjenester.html">Etterisolering</a></li>
-      </ul>
-    </div>
+              <div class="form-group">
+                <label class="form-label" for="telefon">Telefon</label>
+                <input class="form-input" type="tel" id="telefon" name="telefon" autocomplete="tel" />
+              </div>
 
-    <div class="footer-column footer-contact-col">
-      <h3>Kontakt</h3>
-      <ul class="footer-contact">
-        <li><strong>Firma:</strong> TM Nord Bygg AS</li>
-        <li><strong>Sted:</strong> Borkenes</li>
-        <li><strong>Telefon:</strong> <a href="tel:+4700000000">+47 939 25 776
-</a></li>
-        <li><strong>E-post:</strong> <a href="mailto:post@tmnordbygg.no">post@tmnordbygg.no</a></li>
-        <li><strong>Org.nr:</strong> 829 566 192</li>
-      </ul>
-    </div>
-  </div>
+              <div class="form-group">
+                <label class="form-label" for="melding">Melding *</label>
+                <textarea class="form-textarea" id="melding" name="melding" required placeholder="Beskriv kort hva du ønsker hjelp med..."></textarea>
+              </div>
 
-  <div class="footer-bottom">
-    <div class="container footer-bottom-inner">
-      <p>© 2026 TM Nord Bygg AS. Alle rettigheter forbeholdt.</p>
-      <p>
-        Utviklet i nord av
-        <a
-          href="https://nordtech.as"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          NordTech
-        </a>
-      </p>
-    </div>
-  </div>
-</footer>
+              <button type="submit" class="btn btn-primary">Send forespørsel</button>
+            </form>
+          </div>
+
+          <aside class="about-facts" aria-label="Kontaktinformasjon">
+            <div class="fact-card">
+              <span class="fact-number">Telefon</span>
+              <p><a href="tel:+4793925776">+47 939 25 776</a></p>
+            </div>
+            <div class="fact-card">
+              <span class="fact-number">E-post</span>
+              <p><a href="mailto:post@tmnordbygg.no">post@tmnordbygg.no</a></p>
+            </div>
+            <div class="fact-card">
+              <span class="fact-number">Adresse</span>
+              <p>Borkenes</p>
+            </div>
+            <div class="fact-card">
+              <span class="fact-number">Dekningsområde</span>
+              <p>Nordland, Troms og Finnmark</p>
+            </div>
+            <div class="fact-card">
+              <span class="fact-number">Org.nr</span>
+              <p>829 566 192</p>
+            </div>
+          </aside>
+        </div>
+      </section>
     </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo">
+            <img src="img/tmnordlogo-2.svg" alt="TM Nord Bygg AS" />
+          </a>
+          <p class="footer-text">
+            TM Nord Bygg AS utfører takarbeid, tømrerarbeid, blikkarbeid, kledning,
+            vinduer og etterisolering i Nordland, Troms og Finnmark.
+          </p>
+          <a href="https://www.facebook.com/profile.php?id=100087555399994" target="_blank" rel="noopener noreferrer" class="footer-social" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M22 12.07C22 6.49 17.52 2 12 2S2 6.49 2 12.07c0 5.02 3.66 9.18 8.44 9.93v-7.02H7.9v-2.91h2.54V9.85c0-2.52 1.49-3.91 3.78-3.91 1.1 0 2.25.2 2.25.2v2.48H15.2c-1.25 0-1.64.78-1.64 1.58v1.89h2.8l-.45 2.91h-2.35V22c4.78-.75 8.44-4.91 8.44-9.93Z" />
+            </svg>
+          </a>
+        </div>
+        <div class="footer-column footer-nav">
+          <h3>Snarveier</h3>
+          <ul class="footer-links">
+            <li><a href="tjenester.html">Tjenester</a></li>
+            <li><a href="om.html">Om oss</a></li>
+            <li><a href="prosjekter.html">Prosjekter</a></li>
+            <li><a href="anmeldelser.html">Anmeldelser</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+          </ul>
+        </div>
+        <div class="footer-column footer-services">
+          <h3>Tjenester</h3>
+          <ul class="footer-links">
+            <li><a href="tjenester.html#takarbeid">Takarbeid</a></li>
+            <li><a href="tjenester.html#tomrerarbeid">Tømrerarbeid</a></li>
+            <li><a href="tjenester.html#blikkarbeid">Blikkarbeid</a></li>
+            <li><a href="tjenester.html#kledning-vinduer">Kledning og vinduer</a></li>
+            <li><a href="tjenester.html#etterisolering">Etterisolering</a></li>
+          </ul>
+        </div>
+        <div class="footer-column footer-contact-col">
+          <h3>Kontakt</h3>
+          <ul class="footer-contact">
+            <li><strong>Firma:</strong> TM Nord Bygg AS</li>
+            <li><strong>Sted:</strong> Borkenes</li>
+            <li><strong>Telefon:</strong> <a href="tel:+4793925776">+47 939 25 776</a></li>
+            <li><strong>E-post:</strong> <a href="mailto:post@tmnordbygg.no">post@tmnordbygg.no</a></li>
+            <li><strong>Org.nr:</strong> 829 566 192</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container footer-bottom-inner">
+          <p>© 2026 TM Nord Bygg AS. Alle rettigheter forbeholdt.</p>
+          <p>Utviklet i nord av <a href="https://nordtech.as" target="_blank" rel="noopener noreferrer">NordTech</a></p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
   </body>
-  <script src="main.js"></script>
 </html>

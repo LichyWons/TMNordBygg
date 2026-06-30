@@ -64,3 +64,13 @@ window.addEventListener('resize', () => {
 
 window.addEventListener('load', setHeaderHeight);
 setHeaderHeight();
+
+// aria-current="page" on active nav link
+(function () {
+  const page = window.location.pathname.split('/').pop() || 'index.html';
+  document.querySelectorAll('.main-nav a, .menu-links a').forEach((link) => {
+    if (link.getAttribute('href') === page) {
+      link.setAttribute('aria-current', 'page');
+    }
+  });
+})();

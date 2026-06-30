@@ -145,7 +145,8 @@ h3 {
 }
 
 .main-nav a:hover,
-.main-nav a:focus-visible {
+.main-nav a:focus-visible,
+.main-nav a[aria-current="page"] {
   color: var(--color-primary);
 }
 
@@ -780,6 +781,83 @@ h3 {
 @media (min-width: 988px) {
   .menu-overlay {
     display: none;
+  }
+}
+
+/* 3-column variant for why-grid */
+.why-grid.columns-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 1200px) {
+  .why-grid.columns-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* CONTACT FORM */
+.contact-form {
+  display: grid;
+  gap: var(--space-21);
+}
+
+.form-group {
+  display: grid;
+  gap: var(--space-8);
+}
+
+.form-label {
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: var(--color-heading);
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: var(--space-13) var(--space-21);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
+  font-size: var(--text-sm);
+  font-family: inherit;
+  color: var(--color-text);
+  transition: border-color var(--transition);
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: var(--color-primary);
+}
+
+.form-textarea {
+  min-height: 144px;
+  resize: vertical;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1.618fr 1fr;
+  gap: var(--space-55);
+  align-items: start;
+}
+
+@media (max-width: 987px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
   }
 }
 
